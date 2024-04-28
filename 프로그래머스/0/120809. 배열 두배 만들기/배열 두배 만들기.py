@@ -1,4 +1,2 @@
 def solution(numbers):
-    def double(x):
-        return x * 2;
-    return list(map(double, numbers))
+    return [num * 2 for num in numbers]
