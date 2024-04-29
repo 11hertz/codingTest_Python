@@ -1,3 +1,2 @@
-import re
 def solution(my_string):
-    return re.sub(r'[aeiou]', '', my_string)
+    return ''.join(x for x in my_string if not(x in "aeiou"))
