@@ -1,3 +1,2 @@
 def solution(money):
-    price = 5500
-    return [money // price, money % price]
+    return divmod(money, 5500)
