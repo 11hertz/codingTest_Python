@@ -1,2 +1,2 @@
 def solution(array, height):
-    return sum([student > height for student in array])
+    return sum(True for student in array if student > height)
