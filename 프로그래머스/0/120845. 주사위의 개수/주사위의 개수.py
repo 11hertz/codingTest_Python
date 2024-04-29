@@ -1,4 +1,3 @@
-from functools import reduce
+
 def solution(box, n):
-    answer = reduce(lambda acc, cur: acc * (cur // n), box, 1)
-    return answer
+    return (box[0] // n) * (box[1] // n) * (box[2] // n)
