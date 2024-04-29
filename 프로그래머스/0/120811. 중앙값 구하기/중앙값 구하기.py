@@ -1,3 +1,3 @@
-import numpy as np
+import statistics
 def solution(array):
-    return np.median(array)
+    return statistics.median(array)
