@@ -3,5 +3,5 @@ def solution(numbers, n):
     for x in numbers:
         answer += x
         if answer > n:
-            break
-    return answer
+            return answer
+    
