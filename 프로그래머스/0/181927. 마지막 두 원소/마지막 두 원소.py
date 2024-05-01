@@ -1,6 +1,3 @@
-def solution(num_list):
-    if num_list[-1] > num_list[-2]:
-        num_list.append(num_list[-1] - num_list[-2])
-    else:
-        num_list.append(num_list[-1] * 2)
-    return num_list
+def solution(n_list):
+    n_list.append(n_list[-1] - n_list[-2] if n_list[-1] > n_list[-2] else n_list[-1] * 2)
+    return n_list
