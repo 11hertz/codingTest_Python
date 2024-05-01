@@ -1,4 +1,11 @@
 def solution(num_list):
-    oddSum = ''.join(str(num_list[x]) for x in range(len(num_list)) if num_list[x] % 2)
-    evenSum = ''.join(str(num_list[x]) for x in range(len(num_list)) if not num_list[x] % 2)
+    oddSum = ''
+    evenSum = ''
+    
+    for x in range(len(num_list)):
+        if num_list[x] % 2:
+            oddSum += str(num_list[x])
+        else:
+            evenSum += str(num_list[x])
+            
     return int(oddSum) + int(evenSum)
