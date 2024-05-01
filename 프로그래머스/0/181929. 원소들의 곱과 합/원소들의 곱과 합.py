@@ -1,3 +1,3 @@
-from math import prod
+import math
 def solution(num_list):
-    return int(sum(num_list) ** 2 > prod(num_list))
+    return int(sum(num_list) ** 2 > math.prod(num_list))
