@@ -1,7 +1,9 @@
 def solution(binomial):
-    def calculation(txt):
-        a, op, b = txt.split(' ')
-        if(op == '+') : return int(a) + int(b)
-        elif(op == '-') : return int(a) - int(b)
-        else : return int(a) * int(b)
-    return calculation(binomial)
+    a, op, b = binomial.split(' ')
+    a = int(a)
+    b = int(b)
+    
+    if(op == '+') : return a + b
+    elif(op == '-') : return a - b
+    else : return a * b
+   
