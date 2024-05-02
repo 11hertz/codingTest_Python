@@ -1,8 +1,6 @@
 def solution(n):
-    answer = [[0 for y in range(n)] for x in range(n)]
+    answer = [[0] * n for x in range(n)]
     
-    for x in range(n):
-        for y in range(n):
-            if(x == y) : answer[x][y] = 1
+    for x in range(n) : answer[x][x] = 1
     
     return answer
