@@ -1,3 +1,2 @@
-str = input()
-for x in str:
+for x in input():
     print(x)
