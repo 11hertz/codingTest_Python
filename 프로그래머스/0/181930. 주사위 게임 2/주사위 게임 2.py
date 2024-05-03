@@ -1,10 +1,9 @@
 def solution(a, b, c):
-    answer = 0
+    equals = len(set([a, b, c]))
+    if equals == 1:
+        return (a + b + c) * (a ** 2 + b ** 2 + c ** 2) * (a ** 3 + b ** 3 + c ** 3)
+    elif equals == 2:
+        return (a + b + c) * (a ** 2 + b ** 2 + c ** 2)
+    elif equals == 3:
+        return a + b + c
     
-    if (a == b and b != c) or (a == c and b != c) or (b == c and b != a): 
-        answer = (a + b + c) * (a ** 2 + b ** 2 + c ** 2)
-    elif (a == b and b == c):
-        answer = (a + b + c) * (a ** 2 + b ** 2 + c ** 2) * (a ** 3 + b ** 3 + c ** 3)
-    else:
-        answer = a + b + c
-    return answer
