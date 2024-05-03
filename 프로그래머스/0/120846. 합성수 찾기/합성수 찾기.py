@@ -8,7 +8,6 @@ def solution(n):
         return count
     
     for x in range(1, n + 1):
-        divisorCount = 0
         if getDivisor(x) >= 3 : answer += 1
         
     return answer
