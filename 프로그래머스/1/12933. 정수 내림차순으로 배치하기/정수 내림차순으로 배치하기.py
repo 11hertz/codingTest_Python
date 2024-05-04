@@ -1,5 +1,5 @@
 def solution(n):
-    answer = sorted(list(str(n)))
-    answer.reverse()
+    answer = list(str(n))
+    answer.sort(reverse = True)
     
     return int(''.join(answer))
