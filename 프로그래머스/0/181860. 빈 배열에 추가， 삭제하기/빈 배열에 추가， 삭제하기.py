@@ -4,6 +4,6 @@ def solution(arr, flag):
     for x in range(len(flag)):
         if flag[x] : answer += [arr[x]] * (arr[x] * 2)
         else :
-            for x in range(arr[x]) : answer.pop()
+            for _ in range(arr[x]) : answer.pop()
     
     return answer
