@@ -1,8 +1,2 @@
 def solution(intStrs, k, s, l):
-    answer = []
-    
-    for x in intStrs:
-        slicedStr = int(x[s : s + l])
-        if slicedStr > k : answer.append(slicedStr)
-    
-    return answer
+    return [int(x[s : s + l]) for x in intStrs if int(x[s : s + l]) > k]
