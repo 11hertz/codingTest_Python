@@ -1,2 +1,2 @@
 def solution(array):
-    return sum(str(x).count('7') for x in array)
+    return str(array).count('7')
