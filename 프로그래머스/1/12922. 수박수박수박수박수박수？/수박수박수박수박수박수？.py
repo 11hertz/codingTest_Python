@@ -1,8 +1,2 @@
 def solution(n):
-    answer = ''
-    
-    for x in range(n):
-        if x % 2 == 0 : answer += '수'
-        else : answer += '박'
-        
-    return answer
+    return ''.join('수' if x % 2 == 0 else '박' for x in range(n))
