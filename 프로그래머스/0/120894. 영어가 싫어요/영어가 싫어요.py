@@ -1,4 +1,7 @@
 def solution(numbers):
-    answer = numbers.replace('zero', '0').replace('one', '1').replace('two', '2').replace('three', '3').replace('four', '4').replace('five', '5').replace('six', '6').replace('seven', '7').replace('eight', '8').replace('nine', '9')
+    numArr = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
     
-    return int(answer)
+    for idx, text in enumerate(numArr):
+        numbers = numbers.replace(numArr[idx], str(idx))
+    
+    return int(numbers)
