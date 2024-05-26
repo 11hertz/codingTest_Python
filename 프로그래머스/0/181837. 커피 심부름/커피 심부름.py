@@ -1,2 +1,2 @@
 def solution(order):
-    return sum(4500 if 'americano' in coffee or 'anything' in coffee else 5000 for coffee in order)
+    return sum(5000 if 'cafelatte' in coffee else 4500 for coffee in order)
