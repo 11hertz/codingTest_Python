@@ -1,7 +1,6 @@
 def solution(my_string):
     answer = [0 for x in range(52)]
     
-    
     for x in my_string :
         if x.isupper() : answer[ord(x) - 65] += 1
         else : answer[ord(x) - 97 + 26] += 1
