@@ -9,6 +9,6 @@ def solution(participant, completion):
         playerList[x] -= 1
         
     for x in playerList :
-        if playerList[x] == 1 : return x    
+        if playerList[x] : return x    
 
     
