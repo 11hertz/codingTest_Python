@@ -11,5 +11,4 @@ def solution(s):
         else : answer += x.lower()
         count += 1
         
-    
     return answer
