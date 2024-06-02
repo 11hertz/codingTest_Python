@@ -7,5 +7,4 @@ def solution(k, m, score):
         if len(score[x : x + m]) == m :
             answer += min(score[x : x + m]) * len(score[x : x + m])
         
-    
     return answer
