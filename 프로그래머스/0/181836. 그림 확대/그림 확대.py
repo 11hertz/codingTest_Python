@@ -6,6 +6,6 @@ def solution(picture, k):
         for y in x:
             str += y * k
         
-        for z in range(k) : answer.append(str)
+        for _ in range(k) : answer.append(str)
 
     return answer
