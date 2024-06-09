@@ -2,10 +2,7 @@ def solution(numbers):
     arr = []
     
     for x in range(len(numbers) - 1):
-        for y in range(len(numbers)):
-            if x == y : continue
-            else : 
-                num = numbers[x] + numbers[y]
-                arr.append(num)
+        for y in range(x + 1, len(numbers)):
+            arr.append(numbers[x] + numbers[y])
 
     return sorted(list(set(arr)))
